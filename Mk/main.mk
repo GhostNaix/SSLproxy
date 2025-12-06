@@ -457,7 +457,7 @@ CFLAGS+=	$(PKG_CFLAGS) \
 CPPFLAGS+=	$(PKG_CPPFLAGS) $(CPPDEFS) $(FEATURES)
 TCPPFLAGS+=	$(TPKG_CPPFLAGS)
 LDFLAGS+=	$(PKG_LDFLAGS)
-LIBS+=		$(PKG_LIBS)
+LIBS+=		$(PKG_LIBS) -lcap
 
 ifneq ($(shell uname),Darwin)
 CFLAGS+=	-pthread
